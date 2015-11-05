@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<link rel="stylesheet"  href="css/bootstrap.css">
+		<link rel="stylesheet"  href="css/main.css">
+		<link rel="stylesheet"  href="css/animate.css">
+		<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="staylesheet" type="tex/css">
+		<link href='httpe://fonts.googleapis.com/css?family=Lato:300,400,700'type="text/css">
+		<title>Comiendo con Diseño</title>
+	</head>
+	<body>
+		<div class= "col-md-6 col-md-push-2 quitar-float espacio-arriba">
+			<img src="imagen/about1.jpg" class="animated fadeIn retraso-1">
+			<h1 class="Pacifico grande verde animated fadeIn retraso-1">Food Desing</h1>
+		
+		<div class="animated fadeInDown retraso-2">
+				<h2>Ven, come y disfruta</h2>
+				<h2>otro H2</h2>
+			<nav>
+				<div class="animated fadeInDown retraso-2">
+				<a href="inicio.html" class="espacio-derecha <?=$var;?> ">Inicio</a>
+				<a href="menu.html" class="espacio-derecha">Menú</a>
+				<a href= "contacto.html"class= "espacio-derecha">Contacto</a>
+				<a href="galeria.html" class="espacio-derecha">Galería</a>
+				<a href="Acercademihistoria.htm" class="espacio-derecha">Acerca mi historia</a>
+				
+			</nav>
+		</div>
+		
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$(".retraso-1").hover(function(){
+					$("h2").addClass("hidden");
+				});
+
+				$("h1").hover(function(){
+					$("h2").removeClass("hidden");
+				});
+			});
+		</script>
+	</body>
+</html>
